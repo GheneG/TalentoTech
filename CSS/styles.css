@@ -352,6 +352,13 @@ button:hover{
         display: flex;
         flex-direction: column;
     }
+    .Sobre-mi-caja p, .Sobre-mi-caja ul{
+        padding: 15px;
+        margin: 10px;
+    }
+    .sobre-mi p{
+        margin-top: 20px;
+    }
     .yoanimada{
         width: 80%;
         height: 250px;
