@@ -334,6 +334,11 @@ button:hover{
     font-size: 30px;
 }
 @media (max-width: 768px) {
+    .Tipos {
+        width: 90%;
+        height: auto;
+        margin: 10px 0; 
+    }
     .reseñas{
         grid-template-columns: 1fr;
     }
