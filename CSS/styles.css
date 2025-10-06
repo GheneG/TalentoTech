@@ -338,8 +338,10 @@ button:hover{
         grid-template-columns: 1fr;
     }
     .servicios{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     .Sobre-mi-caja{
         display: flex;
