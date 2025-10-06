@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited {
+  color: white;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: rgb(240, 240, 240);
+   
+}
+header{
+    background-color: rgb(40, 41, 30);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    padding: 10px;
+    text-align: center;
+}
+header p{
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 20px;
+}
+header h1{
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+header img{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: start;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    width: 50px;
+}
+footer{
+    background-color: rgb(40, 41, 30);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.derechos{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    background-color: rgb(87, 89, 155);
+    padding: 10px;
+    gap: 25px;
+    font-weight: bold;
+    color: aliceblue;
+    padding-right: 30px;
+}
+.fondo{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+}
+nav ul li{
+    cursor: pointer;
+}
+
+/*Sección de sobre mí*/
+
+.Sobre-mi-caja{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 6px;
+    margin: 30px 10px 10px 10px;
+    padding: 10px;
+    
+}
+.Sobre-mi-caja h3{
+    font-family: poppins, sans-serif;
+    font-size: 24px;
+    color: rgb(87, 89, 155);
+    margin-left: 20px;
+}
+.Sobre-mi-caja p, .Sobre-mi-caja ul{
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+    color: rgb(40, 41, 30);
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 10px 20px 20px;
+    list-style-type: none;
+}
+
+.sobre-mi{ 
+    grid-column: 1 / 4;
+}
+.yoanimada{
+    grid-column: 4 / 6;
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+    width: 75%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.hobbies{
+    grid-column: 1 / 4;
+    align-self: center;
+}
+.educacion{
+    grid-column: 1 / 4; 
+}
+/*Sección de servicios*/
+article{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(87, 89, 155);
+    padding: 5px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+}
+article p{
+    text-align: justify;
+    padding: 10px 15px;
+}
+.Tipos:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.servicios{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+button{
+    background-color: rgb(236, 235, 106);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+button:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    color: rgb(87, 89, 155);
+}
+.SocialMedia{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px 0px;
+}
+.SocialMedia img{
+    width: 100%;
+    margin-top: 20px;
+}
+.SocialMedia h3{
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+    color: rgb(87, 89, 155);
+    text-align: center;
+    padding-top: 10px;
+}
+.SocialMedia h4{
+    font-size: 18px;
+    color: rgb(40, 41, 30);
+    margin-top: 10px;
+}
+.SocialMedia p{
+    font-size: 16px;
+    color: rgb(40, 41, 30);
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/*Sección de Experiencia*/
+
+.skills{
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0;
+}
+.skills h2{
+    padding-top: 20px;
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+    color: rgb(87, 89, 155);
+    text-align: center;
+}
+.skills ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(40, 41, 30);
+}
+.skills li{
+    background-color: rgb(236, 235, 106);
+    color: rgb(40, 41, 30);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px;
+}
+.experiencia{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+.experiencia h2{
+    padding-top: 20px;
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+    color: rgb(87, 89, 155);
+    text-align: center;
+}
+.experiencia h4, .experiencia h5{
+    margin: 10px 20px;
+    color: rgb(40, 41, 30);
+}
+.experiencia h3{
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: rgb(87, 89, 155);
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+.experiencia h4{
+    font-size: 16px;
+    font-style: italic;
+}
+.experiencia ul{
+    list-style-type: disc;
+    margin-left: 50px;
+    color: rgb(40, 41, 30);
+}
+.puesto{
+    padding: 0 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reseñas{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 20px 10px;
+}
+.card{
+    background-color: rgba(87, 89, 155, 0.8);
+    color: white;
+    border-radius: 20px 0px 20px 0px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 40px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+    justify-self: center;
+}
+.card p{
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+/*Sección de contacto*/
+.contacto{
+    background-color: rgb(87, 89, 155);
+    color: white;
+    text-align: center;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+}
+.contactocaja{
+    display: flex;
+    justify-content: center;
+}
+.contacto input,.contacto textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.contacto button {
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+.contacto h2{
+    margin-bottom: 10px;
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    .reseñas{
+        grid-template-columns: 1fr;
+    }
+    .servicios{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Sobre-mi-caja{
+        display: flex;
+        flex-direction: column;
+    }
+    .yoanimada{
+        width: 80%;
+        height: 250px;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+}
