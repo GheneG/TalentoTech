@@ -334,6 +334,9 @@ button:hover{
     font-size: 30px;
 }
 @media (max-width: 768px) {
+    header{
+    grid-template-columns: 1fr 3fr 1fr;
+    }
     .Tipos {
         width: 90%;
         height: auto;
